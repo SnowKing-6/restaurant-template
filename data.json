@@ -9,18 +9,18 @@
         "name": "بيتزا مارغريتا",
         "price": "18.00 .ل.د",
         "description": "عجينة رقيقة مغطاة بصلصة الطماطم الغنية وجبنة الموزاريلا الفاخرة.",
-        "image": "/images/pizza_margreta.png"
+        "image": "images/pizza_margreta.png"
     },
     {
         "name": "بيتزا الخضار المشكلة",
         "price": "22.00 .ل.د",
         "description": "مزيج من الفلفل، الزيتون، والبصل مع لمسة من قطع اللحم المتبل",
-        "image": "../images/pizza_vegetarian.png"
+        "image": "images/pizza_vegetarian.png"
     },
     {
         "name": "وجبة شاورما عربي",
         "price": "20.00 .ل.د",
         "description": "لفائف شاورما محمرة تقدم مع البطاطس المقرمشة وصوص الثومية اللذيذ.",
-        "image": "../images/شاورما.png"
+        "image": "images/شاورما.png"
     }
 ]

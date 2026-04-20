@@ -1,0 +1,257 @@
+:root {
+    --bg-main: #0c0c0c;
+    --bg-card: #161616;
+    --color-white: #f8f9fa;
+    --color-orange: #ff5e00;
+    --accent: #ff4d00;
+    --transition-bezier: all 0.5s cubic-bezier(0.25, 1, 0.5, 1);
+}
+
+/* 1. Global Styles & Boldness */
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    background-color: var(--bg-main) !important;
+    color: #ffffff;
+    font-family: 'Cairo', sans-serif;
+    overflow-x: hidden;
+    font-weight: 900;
+}
+
+h1,
+h2,
+h3,
+h4,
+span,
+a,
+p,
+.btn {
+    font-weight: 900 !important;
+}
+
+/* مسافات أمان للموقع كله */
+.section-padding {
+    padding-left: 20px;
+    padding-right: 20px;
+}
+
+/* 2. Hero Section */
+/* تحديث قسم الهيرو */
+.hero {
+    position: relative;
+    height: 100dvh;
+    /* كدعم للمتصفحات القديمة */
+    height: 100dvh;
+    /* الحل السحري للجوالات الحديثة */
+    width: 100%;
+    background-image: url('../images/pizza_margreta.png');
+    background-size: cover;
+    background-position: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+/* تحديث الـ Overlay لضمان التغطية الكاملة */
+.overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    /* نستخدم bottom: 0 بدلاً من height: 100% للتأكد من الالتصاق بالحافة */
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(to bottom, rgba(0, 0, 0, 0.4), rgba(12, 12, 12, 1));
+    z-index: 1;
+    border: var(--bg-main) solid 1px;
+    padding: 0% !important;
+    margin: 0% !important;
+}
+
+.hero-content {
+    position: relative;
+    z-index: 2;
+    text-align: center;
+}
+
+.hero-title {
+    color: var(--color-white);
+    font-size: clamp(45px, 10vw, 90px);
+    line-height: 1.1;
+    margin-bottom: 30px;
+    text-shadow: 0 10px 30px rgba(0, 0, 0, 0.5);
+}
+
+.order-btn {
+    display: inline-block;
+    background-color: var(--color-orange);
+    color: white;
+    text-decoration: none;
+    padding: 18px 55px;
+    font-size: 24px;
+    border-radius: 50px;
+    transition: var(--transition-bezier);
+}
+
+/* 3. Navbar */
+.nav-container {
+    position: absolute;
+    top: 40px;
+    z-index: 10;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    padding: 0 20px;
+}
+
+.nav-toggle {
+    display: none;
+}
+
+.nav-wrapper {
+    display: flex;
+    align-items: center;
+    background: rgba(26, 26, 26, 0.95);
+    height: 70px;
+    width: 70px;
+    border-radius: 50%;
+    cursor: pointer;
+    transition: var(--transition-bezier);
+    overflow: hidden;
+    border: 1px solid #333;
+}
+
+.circle-btn {
+    min-width: 70px;
+    height: 70px;
+    background: var(--color-orange);
+    border-radius: 50%;
+}
+
+.nav-links {
+    display: flex;
+    gap: 40px;
+    padding: 0 30px;
+    opacity: 0;
+    visibility: hidden;
+}
+
+.nav-links a {
+    color: #fff;
+    text-decoration: none;
+    font-size: 18px;
+}
+
+.nav-toggle:checked+.nav-wrapper {
+    width: 500px;
+    border-radius: 35px;
+}
+
+.nav-toggle:checked+.nav-wrapper .nav-links {
+    opacity: 1;
+    visibility: visible;
+}
+
+/* 4. Food Cards (رشاقة كاملة وبدون قلتش) */
+.food-card {
+    background: var(--bg-card);
+    border: 1px solid #222;
+    border-radius: 25px;
+    overflow: hidden;
+    transition: 0.4s;
+    max-width: 350px;
+    margin: 0 auto;
+}
+
+.food-card:hover {
+    transform: translateY(-10px);
+    border-color: var(--accent);
+}
+
+.food-img-top {
+    width: 100%;
+    height: 210px;
+    /* ارتفاع ثابت مدروس */
+    background: #000;
+    overflow: hidden;
+}
+
+.food-img-top img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    transition: 0.5s;
+}
+
+.price-badge {
+    color: var(--accent);
+    font-size: 1.4rem;
+    margin: 12px 0;
+    display: block;
+}
+
+/* 5. Contact Buttons */
+.contact-card {
+    flex: 1;
+    min-width: 140px;
+    max-width: 200px;
+    border-radius: 18px;
+    padding: 15px !important;
+}
+
+.whatsapp-btn {
+    background-color: #25d366;
+}
+
+.google-maps {
+    background-color: #0d47a1;
+}
+
+.glow-white-text {
+    text-shadow: 0 0 15px rgba(255, 255, 255, 0.3);
+}
+
+.hours-container {
+    background: #161616;
+    border: 1px solid #333;
+    max-width: 500px;
+}
+
+.main-footer {
+    background: #050505;
+    border-top: 1px solid #222;
+    padding: 50px 0;
+}
+
+/* 6. Mobile Responsiveness */
+@media (max-width: 576px) {
+    .nav-toggle:checked+.nav-wrapper {
+        width: 92%;
+    }
+
+    .nav-links {
+        gap: 15px;
+        padding: 0 15px;
+    }
+
+    .nav-links a {
+        font-size: 15px;
+    }
+
+    .hero-title {
+        font-size: 50px;
+    }
+
+    .contact-card {
+        min-width: 100%;
+    }
+
+    /* الأزرار تحت بعض في الموبايل لسهولة الضغط */
+
+}

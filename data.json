@@ -9,7 +9,7 @@
         "name": "بيتزا مارغريتا",
         "price": "18.00 .ل.د",
         "description": "عجينة رقيقة مغطاة بصلصة الطماطم الغنية وجبنة الموزاريلا الفاخرة.",
-        "image": "../images/pizza_margreta.png"
+        "image": "/images/pizza_margreta.png"
     },
     {
         "name": "بيتزا الخضار المشكلة",

@@ -130,7 +130,8 @@ p,
 .circle-btn {
     min-width: 70px;
     height: 70px;
-    background: var(--color-orange);
+    background-image: url('images/شاورما.png');
+    background-size: cover;
     border-radius: 50%;
 }
 

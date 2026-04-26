@@ -22,11 +22,5 @@
         "price": "20.00",
         "description": "لفائف شاورما محمرة تقدم مع البطاطس المقرمشة وصوص الثومية اللذيذ.",
         "image": "images/شاورما.png"
-    },
-    {
-        "name": "gog",
-        "price": "sds",
-        "description": "dsd",
-        "image": "images/placeholder.png"
     }
 ]

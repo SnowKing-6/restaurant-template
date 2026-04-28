@@ -16,5 +16,11 @@
         "price": "22.00",
         "description": "مزيج من الفلفل، الزيتون، والبصل مع لمسة من قطع اللحم المتبل",
         "image": "images/pizza_vegetarian.png"
+    },
+    {
+        "name": "1",
+        "price": "1",
+        "description": "1",
+        "image": "images/protofolio.png"
     }
 ]

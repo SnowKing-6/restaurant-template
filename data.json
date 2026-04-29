@@ -3,19 +3,19 @@
         "name": "وجبة البرجر الكلاسيكي",
         "price": "10.00",
         "description": "لحم مشوي بجبنة شيدر ذائبة وخضروات طازجة مع بطاطس مقلية",
-        "image": "images/برجر.jpg"
+        "image": "images/برجر.webp"
     },
     {
         "name": "بيتزا مارغريتا",
         "price": "18.00",
         "description": "عجينة رقيقة مغطاة بصلصة الطماطم الغنية وجبنة الموزاريلا الفاخرة.",
-        "image": "images/pizza_margreta.png"
+        "image": "images/pizza_margreta.webp"
     },
     {
         "name": "بيتزا الخضار المشكلة",
         "price": "22.00",
         "description": "مزيج من الفلفل، الزيتون، والبصل مع لمسة من قطع اللحم المتبل",
-        "image": "images/pizza_vegetarian.png"
+        "image": "images/pizza_vegetarian.webp"
     },
     {
         "name": "1",

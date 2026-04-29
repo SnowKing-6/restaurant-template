@@ -48,7 +48,7 @@ p,
     height: 100dvh;
     /* الحل السحري للجوالات الحديثة */
     width: 100%;
-    background-image: url('images/شاورما.png');
+    background-image: url('images/شاورما.webp');
     background-size: cover;
     background-position: center;
     display: flex;
@@ -130,7 +130,7 @@ p,
 .circle-btn {
     min-width: 85px; /* مطابقة الطول الجديد */
     height: 85px;
-    background-image: url('images/LOGOV3.png');
+    background-image: url('images/logo.webp');
     background-size: cover;
     background-position: center;
     border-radius: 50%;

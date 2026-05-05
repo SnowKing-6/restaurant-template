@@ -21,5 +21,11 @@
         "name": "س",
         "price": "س",
         "image": "images/logo.webp"
+    },
+    {
+        "name": "s",
+        "price": "s",
+        "description": "s",
+        "image": "images/logo.webp"
     }
 ]
